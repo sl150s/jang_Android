@@ -61,6 +61,13 @@ public class MyFragment extends Fragment implements View.OnClickListener{
         }
     }
 
+
+    //액티비티에서 특정 시점에 호출할 예정인 메소드
+    public void reset(){
+        count=0;
+        textView.setText("0");
+    }
+
     //이 fragment 에서 전달하는 메세지를 받을 액티비티에서 구현할 인터페이스를 클래스 안에 정의 하기
     public interface MyFragmentListener{
         public void sendMsg(String msg);
